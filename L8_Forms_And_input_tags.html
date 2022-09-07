@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutioral</h2>
+    <!-- action -ak end point hota hai jaha pai form kai sare data submit ho jate hai    -->
+    <form action="backend.php">
+        <!-- input tag - jaha pai user apna input dega -->
+        <!-- label use karne se name pai click karegeai to slect ho jyiga -->
+        <label for="name">Name</label>
+        <div>
+            Name:<input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Roll:<input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email<input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date <input type="date" name="my date">
+        </div>
+        <br>
+        <div>
+            Bonus<input type="number" name="my bonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?:<input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">Other <input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        <!-- text area : se bare bare paragraph sai oo input le sake user se -->
+        <div>
+            Write about Yourself:<textarea name="myText" cols="20" rows="10"></textarea>
+        </div>
+
+
+        <br>
+        <div>
+            <label for="Car">Car</label>
+            <select name="mycar" id="Car">
+                <option value="Alt">Alto</option>
+                <option value="swf">Dezire</option>
+                <option value="scr" selected>scripo</option>
+                <!-- selected - use karne direct slect ho jyiha option me -->
+            </select>
+        </div>
+        <br>
+
+        <!-- submit and reset -->
+        <div>
+            <input type="submit" value="submit Now">
+            <input type="reset" value="reset Now">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
