@@ -1,0 +1,17 @@
+/* Css - gives style to raw HTML */
+/* Css - stands for cascading style sheets */
+/* Css - is used to give style to our web pages */
+/* Css -is used to make Websites responsive */
+/* HTML - is used to structure a website */
+/* Css- takes responsibility of design */
+/* Cascading style sheets which is known as CSS is a style sheet language that used to handel the presentation of the web page containing HTML */
+
+/* selector         property          value  */
+/* p       {      color :        blue    } */
+
+
+
+/* THREE WAYS TO ADD CSS TO THE MARKUP */
+/* 1) INLINE CSS : css is addded to the elements directly using style attribute */
+/* 2) INTERNAL CSS: css is kept inside the head tags in <style> tags */
+/* 2) EXTERNAL CSS: css is kept  separately inside a .css style sheet */
