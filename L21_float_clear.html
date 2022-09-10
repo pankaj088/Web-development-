@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lobster', cursive;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;
+            background-color: aqua;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: antiquewhite;
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #Computer {
+            float: right;
+            width: 48%;
+        }
+
+        #Stationary {
+            /* float: left; */
+            clear: both;
+            width: 48%;
+        }
+
+        p,
+        h3 {
+            /* text-align: center;
+            text-align: right;
+            text-align: left; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23PX auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="fruit" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquid sequi ex
+                at eos enim minima similique voluptate inventore aut, corrupti necessitatibus nostrum velit neque
+                incidunt eum. Tempora, deserunt iusto.</p>
+        </div>
+
+        <div id="Computer" class="item">
+            <h3>Computer</h3>
+            <p id="Computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero
+                aperiam sequi asperiores minus explicabo illo. Aliquam nihil dignissimos commodi sit reiciendis eligendi
+                et iure at quisquam, architecto consequuntur molestiae?</p>
+        </div>
+
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ex
+                impedit totam iste, veniam commodi consequuntur velit repellat voluptatem laudantium ducimus,
+                perspiciatis numquam quo vitae nobis. Aperiam nostrum voluptas at.</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

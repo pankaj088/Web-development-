@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* yaha hm body selector lagya  */
+        body {
+            background-color: rgb(154, 219, 203);
+        }
+
+        .container {
+            background-color: aqua;
+            border: 3px solid red;
+            /* content kai bahar padding atta hai */
+            /* padding: 20px; */
+
+            /* margin yani border kai bahar space ho */
+            /* margin: 35px; */
+
+            /* We can set margin /padding for top, bottom, left, right, like this */
+            /* padding-top: 13px;
+            padding-bottom: 23px;
+            padding-left: 11px;
+            padding-right: 25px; */
+
+            /* or we use short cut */
+            /*padding:top right bottom left; */
+            /* padding: 23px 56px  6px   75px; */
+
+            /* padding: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+
+            /* margin: y(top/bottom) x(left/right); */
+            margin: 14px 15px;
+            border-radius: 23px;
+            width: 555px;
+
+        }
+
+        /* padding element kai ander se hoti hai */
+        /* marging element kai bahar se hoti hai */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum corporis et explicabo,
+            incidunt, tempora vero doloremque porro quidem amet nesciunt ex nisi libero! Similique repellat dolor
+            obcaecati nostrum fuga?</p>
+    </div>
+
+
+    <div class="container">
+        <h3>This is my Second heading</h3>
+        <p id="Second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum corporis et explicabo,
+            incidunt, tempora vero doloremque porro quidem amet nesciunt ex nisi libero! Similique repellat dolor
+            obcaecati nostrum fuga?</p>
+    </div>
+
+
+    <div class="container">
+
+        <h3>This is my third heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum corporis et explicabo,
+            incidunt, tempora vero doloremque porro quidem amet nesciunt ex nisi libero! Similique repellat dolor
+            obcaecati nostrum fuga?</p>
+    </div>
+
+
+</body>
+
+</html>
