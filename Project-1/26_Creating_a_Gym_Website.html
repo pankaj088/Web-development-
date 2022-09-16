@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Css/style.css">
+
+<style>
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('image/body.jpg');
+        height: 4544px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
+
+    .left image {
+        width: 120px;
+        /* invert() se black image white mai convert mai ho jyiga*/
+        filter: invert(100%);
+
+    }
+
+    .left div {
+        background-color: grey;
+        line-height: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mid {
+
+        display: block;
+        width: 34%;
+        margin: 30px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 40px;
+        display: inline-block;
+        /* border: 2px solid purple; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .btn {
+        font-family: 'Lobster', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid yellow;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: aqua;
+    }
+
+    .container {
+        border: 2px solid palevioletred;
+        margin: 250px 180px;
+        padding: 85px;
+        width: 43%;
+        border-radius: 38px;
+    }
+
+    .form-group input {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        display: block;
+        width: 610px;
+        margin: 15px auto;
+        padding: 1px;
+        border: 2px solid black;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: aqua;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: 40px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="image/gym logo.png" alt="">
+            <div>Pankaj fitness</div>
+        </div>
+        <!-- Mid box for navagation  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+
+    <!-- Ak container banya  -->
+    <div class="container">
+        <h1>Join the best gym of mahua now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Gender">
+                        <div class="form-group">
+                            <input type="text" name="" placeholder="Enter your Locality">
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter your Contact Number">
+                                <div class="form-group">
+                                    <input type="text" name="" placeholder="Enter your Email id">
+
+                                </div>
+                                <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
