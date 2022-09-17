@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            position: relative;
+            top: 14px;
+            z-index: 35;
+            /* jiska z-index: jataa hoga uska box uper aa jyiga; */
+            background-color: red;
+        }
+
+        #box2 {
+            /* visibility: hidden; */
+            /* visibility: hidden; - jagah ko reserve karke rakhta hai */
+
+            /* display: none; */
+            /* or display: none - se jagah reserve nhi karta hai & jagah ko bhi  khtam kar deta hai; */
+
+            /* z-index: Will work only for position: relative, absolute, fixed, or sticky; */
+            position: relative;
+            top: 14px;
+            z-index: 30;
+            background-color: green;
+        }
+
+        #box3 {
+            background-color: yellow;
+        }
+
+        #box4 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+
+</html>

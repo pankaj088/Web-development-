@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+
+</head>
+<style>
+    h1 {
+        background-color: brown;
+        color: aqua;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* if p is contained by any li which is contained by div */
+    /* div li p {
+        color: aliceblue;
+        background-color: bisque;
+        font-weight: bold;
+    } */
+
+
+
+    /* div kai ander jitne bhi paragraph(p) hai sabko select kar lega */
+    /* div >  p {
+        color: aquamarine;
+        background-color: blueviolet;
+        font-weight: bold;
+    } */
+
+
+
+    /* pahle se jo bhi div hai sabko select kar lega */
+    div+p {
+        color: white;
+        background-color: peru;
+    }
+</style>
+
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is another paragraph inside li</p>
+                </li>
+
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph </p>
+    </div>
+    <p>This is outermost paragraph</p>
+
+</body>
+
+</html>
