@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 22px 12px;
+        margin: 23px 13px;
+        background-color: bisque;
+        /* border: 2px solid red; */
+        /* box-shadow: postive number dene se niche mai shadow hoga; */
+        /* box-shadow: 5px 10px purple; */
+
+
+        /* box-shadow: negative number dene se shadow upper mai hoga; */
+        /* box-shadow: -5px -10px purple; */
+
+        /* buller radius kai liye  */
+        /* box-shadow: 7px 9px 20px purple ; */
+        /* box-shadow: -7px -9px -20px purple ; */
+
+        /* spared(failna) radius kai liye */
+        /* box-shadow: 7px 9px 20px 35px purple ; */
+
+        /* box kai ander shadow kai liye inset:  ka use karte hai; */
+        box-shadow: inset 8px 30px purple;
+    }
+
+    .card h2 {
+        text-shadow: 3px 5px aqua;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus esse eum vitae
+                recusandae, magnam cum modi commodi nihil molestias hic quae explicabo libero ea in perferendis corporis
+                exercitationem illo.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita architecto exercitationem neque
+                assumenda non, nobis, magni, aut omnis eaque dignissimos ullam. Animi, facere neque quo ipsa saepe quasi
+                quam.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card:3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptas quia doloremque quam quasi unde
+                aspernatur rem a animi quo? Est expedita incidunt reiciendis voluptatem, numquam libero sequi laudantium
+                accusantium!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

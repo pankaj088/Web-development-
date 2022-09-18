@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables/ Custom propeties </title>
+    <style>
+        /* root kai jo bhi variable dalenge oo sav jagh access kar sakte hai */
+        :root {
+            --box-color: violet;
+        }
+
+        .box {
+            /* variables kai liye -- karke likhna pariga */
+            --box-color: violet;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 4px solid black;
+            box-shadow: 5px 5px var(--box-color);
+            margin: 2px 9px;
+        }
+
+        .container {
+            /* --box-color: violet; */
+            display: flex;
+            background-color: var(--box-color);
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
