@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+
+        // Alert in in-browser javascript
+        // alert() - model open karta hai yani ki pahle usse nipat lo uske bad hi kuch hoga and does not return anything:
+        alert("This is alert message");
+
+
+        // user se kuch puchne kai liye prompt ka use karte hai
+        let name = prompt("What is your name?", "default value");
+        console.log(name);
+
+        // confirm() - ka use doubl echeck kai liye use karte hai
+        let deletpost = confirm("Do you really want to delete this post?");
+        // console.log(deletpost);
+
+        if (deletpost) {
+            console.log("Your  post has been deleted succesfully");
+        }
+        else {
+            console.log("your post has not been deleted");
+        }
+    </script>
+</body>
+
+</html>
