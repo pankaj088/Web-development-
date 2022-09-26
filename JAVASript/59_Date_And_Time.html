@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js dates</title>
+</head>
+<style>
+    .container {
+        font-size: 25px;
+        background-color: aqua;
+        border: 2px solid red;
+        padding: 34px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    #time {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- This is a container -->
+        current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is date and time tutorial");
+        // Date constructor banye
+        let now = new Date();
+        console.log(now);
+
+        // date ko intialize karne ka
+        let newdate = new Date("2025-08-08");
+        console.log(newdate);
+
+        // year kai liye function
+        let yr = newdate.getFullYear();
+        console.log("The year is ", yr);
+
+        let mh = newdate.getMonth();
+        console.log("The month is ", mh);
+
+        let dt = newdate.getDate();
+        console.log("The date is ", dt)
+
+        // date set kariga or yai auto corection karta hai
+        newdate.setDate(5);
+        newdate.setMinutes(25);
+        console.log(newdate);
+        //
+        setInterval(updateTime, 1000);
+        
+        function updateTime() {
+            time.innerHTML =  new Date();
+        } 
+    </script>
+
+</body>
+
+</html>
+<!-- Date ak object hai -->

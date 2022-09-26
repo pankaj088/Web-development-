@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js math object</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is math object tutorial</h1>
+    </div>
+
+    <script>
+        let m = Math;
+        console.log(m);
+
+        // Printing the functions from  math object
+        let a = 32.5531;
+        let b = 80;
+        console.log("The value of a and b is ", a, b);
+        console.log("The value of a and b is rounded ", Math.round(a), Math.round(b));
+
+        console.log("3 raised to the power of 2 is ", Math.pow(3, 2))
+
+        console.log("square root of 36 is ", Math.sqrt(36));
+
+        // absoulte function
+        console.log("Absoulte value of 5.66 is ", Math.abs(-5.66));
+
+        // Trigonometric function
+        console.log("The value of sin(pi) is ", Math.sin(Math.PI / 2));
+        console.log("The value of cos(pi) is ", Math.cos(Math.PI / 2));
+        console.log("The value of tan(pi) is ", Math.tan(Math.PI / 2));
+
+        // min and max functions
+        console.log("Minimum value of 4, 5, 6 is ", Math.min(4, 5, 6));
+        console.log("Maxium value of 1, 8, 4 7 is ", Math.max(1, 8, 4, 7));
+
+        // Generating a random number
+        let r = Math.random();
+        console.log("The randon number is ", r)
+        //random nuber genrate 1 to 100
+        let a1 = 1;
+        let b1 = 100;
+        let r1_100 = a1 + (b1 - a1) * Math.random();
+        console.log("The random nuber is ", r1_100);
+
+    </script>
+</body>
+
+</html>
