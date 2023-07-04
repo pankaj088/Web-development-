@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript object</title>
+
+</head>
+
+
+<body>
+
+</body>
+<script>
+    // By object class
+    var Pankaj = new Object();
+    Pankaj.Name = " pankaj prabhkar ";
+    Pankaj.Age = "22";
+    Pankaj.collegeName = "Siliguri instiute of technology";
+    Pankaj.Home = "Mahua";
+    console.log(Pankaj);
+    document.write("<h1>" + Pankaj.name + "</h1>");
+
+    // sabko ak sath print karne kai liye
+    for (const key in Pankaj) {
+        document.write("<br>")
+        document.write(key + "-")
+        alert("Are you sure")
+        document.write(Pankaj[key])
+        confirm("want to see you")
+    }
+
+    // Date
+    var tarik = new Date()
+    // document.write("<br>")
+    document.write("<br> Date -" + tarik)
+    document.write("<br> Year- " + tarik.getFullYear())
+    document.write("<br> Month- " + tarik.getMonth())
+
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promot</title>
+</head>
+
+<body>
+    <h1>java script prompt</h1>
+    <h2 id="p"></h2>
+    <button onclick="change_pass()"> change password</button>
+</body>
+
+<script>
+    var data = prompt('enter your name')
+    document.getElementById('p').innerText = "password chnage sucessfully" + data;
+    open(data);
+
+    // fuction banya
+    function change_pass() {
+        document.write("click karne par")
+    }
+</script>
+
+</html>

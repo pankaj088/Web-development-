@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getelementbyid</title>
+</head>
+
+<body>
+    <h1>getelementbyid</h1>
+    <p id="name" style="background-color: aqua;">pankaj prabhkar</p>
+    <a id="link" href="https://www.linkedin.com/feed/">linkedin</a>
+    <button onclick="change_name()">change name</button>
+
+
+</body>
+<script>
+    var name = document.getElementById('name').innerText
+    console.log(name)
+    function change_name() {
+        var name = document.getElementById('name');
+        name.innerText = "Birjbhan"
+        name.style.color = "red"
+        name.fontsize = "40px"
+        var link = document.getElementById('link');
+
+        link.herf = "https://www.geeksforgeeks.org/"
+        var link1 = document.getElementById('link').herf
+        console.log(link1)
+    }
+
+    var link = document.getElementById('link').herf
+    console.log(link)
+</script>
+
+
+</html>
